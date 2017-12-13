@@ -76,14 +76,21 @@
 			<groupId>com.proxy</groupId>
 			<artifactId>proxy-vole</artifactId>
 			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/proxy-vole_20131209.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.mojo</groupId>
 			<artifactId>findbugs-maven-plugin</artifactId>
 			<version>3.0.4</version>
 		</dependency>
+		<!--<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>2.9.1</version> 
+		</dependency> -->
 	</dependencies>
- 	<!-- build -->
+	<!-- build -->
 	<build>
 		<plugins>
 

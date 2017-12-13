@@ -55,6 +55,16 @@
 	</pluginRepositories>
 	<dependencies>
 		<dependency>
+			<groupId>com.android.ddmlib</groupId>
+			<artifactId>ddmlib</artifactId>
+			<version>r16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>5.0.2.RELEASE</version>
+		</dependency>
+		<dependency>
 			<groupId>com.att.aro</groupId>
 			<artifactId>aro-core</artifactId>
 			<version>6.0.0-SNAPSHOT</version>
@@ -100,6 +110,18 @@
  
  	<build>
 		<plugins>
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+				<version>4.0.0-rc.2</version>
+				<configuration>
+					<sdk>
+						<platform>22</platform>
+					</sdk>
+					<undeployBeforeDeploy>true</undeployBeforeDeploy>
+				</configuration>
+				<extensions>true</extensions>
+			</plugin>
 			<!-- compile to 1.8 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

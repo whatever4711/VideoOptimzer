@@ -278,15 +278,20 @@
 		<!--Please download the source code from the web site and compile it and publish to your own local repository-->
 <!--https://bitbucket.org/luciad/webp-imageio  -->
 <!--mvn install:install-file -Dfile=luciad-webp-imageio-0.6.0-SNAPSHOT.jar -DgroupId=com.luciad.imageio \-DartifactId=webp-imageio \-Dversion=0.6.0-SNAPSHOT \-Dpackaging=jar -->		
+
 		<dependency>
 			<groupId>com.luciad.imageio</groupId>
 			<artifactId>webp-imageio</artifactId>
 			<version>0.5.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/webp-imageio-0.5.2.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.github.jai-imageio</groupId>
 			<artifactId>jai-imageio-jpeg2000</artifactId>
 			<version>1.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jai-imageio-jpeg2000-1.1.jar</systemPath>
 		</dependency>
 		<dependency>
 		  <groupId>org.hyperic</groupId>
